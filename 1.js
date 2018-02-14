@@ -1,8 +1,7 @@
 
-var m =[ ];
-var m1 = [ 1, 2, 3,4,5,6,7,8,9,10];
- m[3]=4;
-console.log(m1);
+
+var m1 = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+ 
 
 function masOut () {
     var p = document.getElementById('new');
@@ -24,15 +23,6 @@ function f1() {
     masOut();
     console.log(m1);
 }
-
-// function fp () {
-//     var el1 = document.getElementById("inp1").value;
-//     m1.pop(el1);
-//     masOut ();
-//     console.log(m1);
-//
-// }
-
 
 function fp() {
     m1.pop();
