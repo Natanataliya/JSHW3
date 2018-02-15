@@ -1,13 +1,13 @@
 
 
-var m1 = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var mas = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
  
 
 function masOut () {
     var p = document.getElementById('new');
     var str ='';
-    for ( var i=0; i<m1.length; i++){
-        str = str + i + '   ' + m1[i] + '<br>';
+    for ( var i=0; i<mas.length; i++){
+        str = str + i + '   ' + mas[i] + '<br>';
     }
     p.innerHTML = str;
 
@@ -16,30 +16,30 @@ function masOut () {
 
 masOut();
 
-function f1() {
+function val() {
     var num = document.getElementById("inp1").value;
     var idElement = document.getElementById('inp2').value;
-    m1[idElement] = num;
+    mas[idElement] = num;
     masOut();
-    console.log(m1);
+    console.log(mas);
 }
 
-function fp() {
-    m1.pop();
-    f1 ();
-    console.log(m1);
+function valPop() {
+    mas.pop();
+    val ();
+    console.log(mas);
 }
 
 
-function fsh() {
-    m1.shift();
-    f1();
-    console.log(m1);
+function valShift() {
+    mas.shift();
+    val();
+    console.log(mas);
 
 }
-function  fpu() {
-    m1.push();
-    f1();
+function valPush() {
+    mas.push();
+    val();
 }
 
 
